@@ -4,6 +4,10 @@ import Root from './Components/Root';
 import NotFound from './Components/NotFound';
 import ChartApp from './Components/MenuTab/ChartTab/ChartApp';
 import WhookApp from './Components/MenuTab/WhookTab/WhookApp';
+import EventApp from './Components/MenuTab/EventTab/EventApp';
+import NewsApp from './Components/MenuTab/NewsTab/NewsApp';
+import StoreApp from './Components/MenuTab/StoreTab/StoreApp';
+import ChargeApp from './Components/MenuTab/ChargeTab/ChargeApp';
 
 function App() {
   const router = createBrowserRouter([
@@ -17,9 +21,25 @@ function App() {
         element: <ChartApp/>,
       },
       {
-        path: "/Whook",
+        path: "/whook",
         element: <WhookApp/>,
-      }
+      },
+      {
+        path: "/event",
+        element: <EventApp/>,
+      },
+      {
+        path: "/news",
+        element: <NewsApp/>,
+      },
+      {
+        path: "/store",
+        element: <StoreApp/>,
+      },
+      {
+        path: "/charge",
+        element: <ChargeApp/>,
+      },
     ],
     },
   ]);
