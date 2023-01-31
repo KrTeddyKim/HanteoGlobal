@@ -8,6 +8,7 @@ import EventApp from './Components/MenuTab/EventTab/EventApp';
 import NewsApp from './Components/MenuTab/NewsTab/NewsApp';
 import StoreApp from './Components/MenuTab/StoreTab/StoreApp';
 import ChargeApp from './Components/MenuTab/ChargeTab/ChargeApp';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   const router = createBrowserRouter([
@@ -46,6 +47,7 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router} />
+      <Footer />
     </div>
   );
 }

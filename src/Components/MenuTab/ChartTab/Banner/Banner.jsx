@@ -7,6 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 SwiperCore.use([ Pagination, Autoplay])
+const bullet = ['1번','2번','3번','4번']
 
 const Banner = () => {
     return (
@@ -15,7 +16,10 @@ const Banner = () => {
           className="banner"
           spaceBetween={50}
           slidesPerView={1}
-          pagination={{ clickable: true }}
+          pagination={{ clickable: true,
+            renderBullet: function (index, className) {
+              return '<div class="' + className + '"><span>' + (bullet[index]) + '</span></div>';
+            } }}
           loop={true}
           autoplay={true}
         >
@@ -24,7 +28,7 @@ const Banner = () => {
               <a href="https://awards.hanteo.com/?l=ko&m=false">
                 <img src="https://www.hanteochart.com/static/media/main_banner_4_en.0af0a667e8ae82ac8622.webp" alt="no img" />
               </a>
-              <p>배너슬라이드1</p>
+                <p>배너슬라이드1</p>
             </div>
           </SwiperSlide>
           <SwiperSlide><img src="https://www.hanteochart.com/static/media/main_banner_1_en.6b733bb0b856f79c8d86.webp" alt="no img" /></SwiperSlide>
