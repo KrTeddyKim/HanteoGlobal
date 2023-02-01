@@ -1,19 +1,30 @@
-// .contents_container {
-//     background-color: green;
-//     height: 60rem;
 
-//     .chart_artist {
-//         background-color: yellow;
-//         display: flex;
-//         justify-content: center;
-//         padding: 0px 2rem;
-//         height: 200rem;
+.contents_container {
+    background-color: green;
+    height: 60rem;
 
-//         .list_artist_live{
-//             background-color: red;
-//             width: 60rem;
-//             height: 40rem;
+    .swiper .swiper-pagination-bullet {
+            background-color: #FB4CA0;
+            // display: flex;
+            position: fixed;
+            width: 100px;
+            height: 100px;
+          }
+
+
+    .chart_artist {
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        padding: 0px 2rem;
+        margin-top: 50px;
+    
+
+        .list_artist_live{
+            background-color: red;
+            width: 60rem;
+            height: 40rem;
             
-//         }
-//     }
-// }
+        }
+    }
+}

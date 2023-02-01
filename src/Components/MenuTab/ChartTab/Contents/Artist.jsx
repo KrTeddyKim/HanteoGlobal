@@ -4,20 +4,18 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import datetime from '../../../../asset/db/datetime.json'
 
-const Test2 = () => {
-
-    const [posts, setPosts] = useState([]);
+const Artist = () => {
+  const [posts, setPosts] = useState([]);
   const [hasNextPage, setHasNextPage] = useState(true);
   const page = useRef(1);
   const [ref, inView] = useInView();
   const resultDatetime = datetime.resultDatetime.value;
-console.log(posts);
-console.log(resultDatetime);
+
 
   const fetch = useCallback(async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/list2?_limit=10&_page=${page.current}`
+        `http://localhost:5000/artist?_limit=10&_page=${page.current}`
       );
       setPosts((prevPosts) => [...prevPosts, ...data]);
       setHasNextPage(data.length === 10);
@@ -40,8 +38,10 @@ console.log(resultDatetime);
       <div className='chart_artist'>
             <div className='inview' ref={ref} style={{ position: 'fixed', bottom: '100px' }}>
             </div>
-      <div className="datetime">{resultDatetime}</div>
+            <div className="chart_genre_name">Artist</div>
+            <div className="datetime">{resultDatetime}</div>
       <div style={{ position: 'relative' }}>
+    
         {posts.map((post,idx) => (
           <div
             key={idx}
@@ -51,9 +51,13 @@ console.log(resultDatetime);
               padding: '8px',
             }}
           >
+            <div>{post.resultDatetime}</div>
+            <div className='img_container'>
+            <img src={post.targetImg} alt="no img" />
+            </div>
             <div>rank: {post.rank}</div>
+            <div>Name: {post.targetName}</div>
             <div>value: {post.value}</div>
-            <div>Name {post.targetName}</div>
           </div>
         ))}
       </div>  
@@ -61,4 +65,4 @@ console.log(resultDatetime);
     );
 };
 
-export default Test2;
+export default Artist;
