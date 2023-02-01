@@ -21,7 +21,7 @@ const Banner = () => {
             //   return '<div class="' + className + '"><span>' + (bullet[index]) + '</span></div>';
             // } }}
           loop={true}
-          // autoplay={true}
+          autoplay={true}
         >
           
           {/* 배너 1번 */}
@@ -35,7 +35,7 @@ const Banner = () => {
               <div className='banner_bottom'>
                 <div className="row_top">
                   <div className="text_top">
-                    [HMA] HANTEO MUSIC AWARDS 한터 뮤직 어워드 2022 🌈
+                  [HMA] HANTEO MUSIC AWARDS 한터 뮤직 어워드 2022 🏆
                   </div>
                   <div className="btn_top">
                   <a href="https://awards.hanteo.com/?l=ko&m=false">
@@ -119,7 +119,7 @@ const Banner = () => {
               <div className='banner_bottom'>
                 <div className="row_top">
                   <div className="text_top">
-                    [아름다운가게 X WHOSFAN] 윤하 & 홀릭스의 따뜻한 연말 만들기 🧤
+                    [아름다운가게 ✕ WHOSFAN] 윤하 & 홀릭스의 따뜻한 연말 만들기 🧤
                   </div>
                   <div className="btn_top">
                   <a href="https://hanteo.zendesk.com/hc/en-us/articles/12640169902745">

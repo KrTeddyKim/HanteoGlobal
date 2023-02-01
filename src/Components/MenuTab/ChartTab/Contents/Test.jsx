@@ -32,13 +32,13 @@ export default function Test() {
       <InfiniteLoader>
         {({ onItemsRendered, ref }) => (
           <List
-            className="List"
-            height={200}
+            className="list_artist_live"
+            height={600}
             itemCount={1}
             itemSize={30}
             onItemsRendered={onItemsRendered}
             ref={ref}
-            width={300}
+            // width={100}
           >
             {Row}
           </List>
