@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../asset/imgs/logoRemoved.png'
+// import logo from '../../asset/imgs/logoRemoved.png'
 const Footer = () => {
     return (
         <div className='footer'>
@@ -15,7 +15,7 @@ const Footer = () => {
                 </div>
                 <div className='right'>
                     <div className="img_container">
-                    <img className="img" src={logo} alt="저작권 OK 로고" />
+                    {/* <img className="img" src={logo} alt="저작권 OK 로고" /> */}
                     </div>
                 </div>
                 <div className="lang_select_box mo">

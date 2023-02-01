@@ -9,9 +9,10 @@ import { FixedSizeList as List } from "react-window";
 // import Test from './Test';
 import Test2 from './Test2';
 import Artist from './Artist';
+import PhysicalRecord from './PhysicalRecord';
 
-SwiperCore.use([ Pagination ])
-const bullet = ['1번','2번','3번','4번']
+// SwiperCore.use([ Pagination ])
+// const bullet = ['1번','2번','3번','4번']
 
 
 const Contents = () => {
@@ -19,29 +20,29 @@ const Contents = () => {
     window.scrollTo(0,0);
   }
     return (
-        <div className='contents_container'>
+        <div className='main_contents'>
         <Swiper
           className="contents"
           spaceBetween={50}
           slidesPerView={1}
-          pagination={{ clickable: true, renderBullet: function (index, className) {
-            return '<div class="' + className + '"><span>' + (bullet[index]) + '</span></div>'; }}}
+          // pagination={{ clickable: true, renderBullet: function (index, className) {
+          //   return '<div class="' + className + '"><span>' + (bullet[index]) + '</span></div>'; }}}
           loop={true}
           onSlideChange={scrollTop}
 
         >
           <SwiperSlide>
-            <div className='chart_artist'>
+            <div className='chart_container'>
             <Artist />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className='chart_artist'>
-            <Test2 />
+            <div className='chart_container'>
+            <PhysicalRecord />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className='chart_artist'>
+            <div className='chart_container'>
             <Test2 />
             </div>
           </SwiperSlide>

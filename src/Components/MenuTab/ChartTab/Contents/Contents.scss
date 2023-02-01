@@ -1,30 +1,126 @@
 
-.contents_container {
-    background-color: green;
-    height: 60rem;
+.main_contents {
+    // background-color: green;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+        
 
-    .swiper .swiper-pagination-bullet {
-            background-color: #FB4CA0;
-            // display: flex;
-            position: fixed;
-            width: 100px;
-            height: 100px;
-          }
+    .contents{
+        // background-color: yellow;
+        width: 56rem;
+        padding: 2rem 2rem;
+        border-radius: 0.8rem;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
+        
 
-    .chart_artist {
-        background-color: yellow;
-        display: flex;
-        justify-content: center;
-        padding: 0px 2rem;
-        margin-top: 50px;
-    
+    .chart_container {
+        // background-color: red;
 
-        .list_artist_live{
-            background-color: red;
-            width: 60rem;
-            height: 40rem;
+        // margin-left: 30rem;
+        
+        .indicator {
+            // background-color: blue;
+            display: flex;
+            justify-content: space-between;
             
+            .chart_genre_name {
+                font-size: 2.0rem;
+                font-weight: bolder;
+                padding: 0.5rem 0;
+            }
+
+            .chart_resultDatetime {
+                font-size: 1.2rem;
+                font-weight:bold;
+                color: rgb(106, 106, 106);
+            }
+
+            .right {
+                display: flex;
+                align-items: center;
+                
+                .stat {
+                    font-size: 1.3rem;
+                    font-weight:700;
+                    color: rgb(106, 106, 106);
+                }
+        }
+        }
+        
+        .rank_data {
+            // background-color: aqua;
+            padding-top: 2rem;
+            bottom: 0;
+
+          .rank_data_container {
+            display: flex;
+            justify-content: space-between;
+
+            .left {
+                display: flex;
+                width: fit-content;
+
+
+                    .img {
+                    display: block;
+                    object-fit: cover;
+                    width: 5rem;
+                    height: 5rem;
+                    border-radius: 0.8rem;
+                }
+
+
+                .rank_container {
+                    width: 4rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .rank {
+                        font-size: 1.7rem;
+                        font-weight: 700;
+                        color: rgb(65, 65, 65);
+                    }
+                }
+
+                .name_container {
+                    display: flex;
+                    align-items: center;
+                    
+                    .name {
+                        font-size: 1.5rem;
+                        font-weight: bold;
+
+                    }
+                }
+    
+            }
+
+
+            .right {
+                display: flex;
+                align-items: center;
+
+                .stat {
+                    font-size: 1.3rem;
+                    font-weight:700;
+                    color: rgb(106, 106, 106);
+
+                }
+            }
+        }  
         }
     }
 }
+    // .swiper .swiper-pagination-bullet {
+    //     background-color: #FB4CA0;
+    //     // display: flex;
+    //     position: fixed;
+    //     width: 100px;
+    //     height: 100px;
+    //   }
+    } 
