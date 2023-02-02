@@ -73,7 +73,7 @@ const Artist = () => {
             </div>
             <div className='right'>
               <div className='stat_container'>
-                <div className='stat'>{post.value}</div>
+                <div className='stat'>{Math.round(post.value)}</div>
               </div>
             </div>
           </div>

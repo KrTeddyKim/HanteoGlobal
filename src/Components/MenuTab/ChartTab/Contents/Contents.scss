@@ -15,12 +15,113 @@
         border-radius: 0.8rem;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
+        .chart_container {
         
-
+            .indicator {
+                // background-color: blue;
+                display: flex;
+                justify-content: space-between;
+                
+                .chart_genre_name {
+                    font-size: 2.0rem;
+                    font-weight: bolder;
+                    padding: 0.5rem 0;
+                }
+    
+                .chart_resultDatetime {
+                    font-size: 1.2rem;
+                    font-weight:bold;
+                    color: rgb(106, 106, 106);
+                }
+    
+                .right {
+                    display: flex;
+                    align-items: center;
+                    padding-right: 1rem;
+                    
+                    .stat {
+                        font-size: 1.5rem;
+                        font-weight:700;
+                        color: rgb(106, 106, 106);
+                    }
+            }
+            }
+            
+            .rank_data {
+                // background-color: aqua;
+                padding-top: 2rem;
+                bottom: 0;
+    
+              .rank_data_container {
+                display: flex;
+                justify-content: space-between;
+    
+                .left {
+                    display: flex;
+                    width: fit-content;
+    
+    
+                        .img {
+                        display: block;
+                        object-fit: cover;
+                        width: 5rem;
+                        height: 5rem;
+                        border-radius: 0.8rem;
+                    }
+    
+    
+                    .rank_container {
+                        width: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0rem 1rem;
+    
+                        .rank {
+                            font-size: 1.7rem;
+                            font-weight: 700;
+                            color: rgb(65, 65, 65);
+                        }
+                    }
+    
+                    .name_container {
+                        display: flex;
+                        align-items: center;
+                        padding-right: 1rem;
+                        
+                        .name {
+                            font-size: 1.5rem;
+                            font-weight: bold;
+    
+                        }
+                    }
+        
+                }
+    
+    
+                .right {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50px;
+    
+    
+                    .stat {
+                        font-size: 1.3rem;
+                        font-weight:700;
+                        color: rgb(106, 106, 106);
+    
+                    }
+                }
+            }  
+            }
+        }
+    
+        
+  @media screen and (max-width: 768px)  {
+        
+    
     .chart_container {
-        // background-color: red;
-
-        // margin-left: 30rem;
         
         .indicator {
             // background-color: blue;
@@ -28,13 +129,13 @@
             justify-content: space-between;
             
             .chart_genre_name {
-                font-size: 2.0rem;
+                font-size: 1.8rem;
                 font-weight: bolder;
                 padding: 0.5rem 0;
             }
 
             .chart_resultDatetime {
-                font-size: 1.2rem;
+                font-size: 1rem;
                 font-weight:bold;
                 color: rgb(106, 106, 106);
             }
@@ -42,9 +143,10 @@
             .right {
                 display: flex;
                 align-items: center;
+                padding-right: 1rem;
                 
                 .stat {
-                    font-size: 1.3rem;
+                    font-size: 1rem;
                     font-weight:700;
                     color: rgb(106, 106, 106);
                 }
@@ -53,7 +155,7 @@
         
         .rank_data {
             // background-color: aqua;
-            padding-top: 2rem;
+            padding-top: 1.5rem;
             bottom: 0;
 
           .rank_data_container {
@@ -75,10 +177,11 @@
 
 
                 .rank_container {
-                    width: 4rem;
+                    width: 30px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    padding: 0rem 2rem;
 
                     .rank {
                         font-size: 1.7rem;
@@ -92,7 +195,7 @@
                     align-items: center;
                     
                     .name {
-                        font-size: 1.5rem;
+                        font-size: 1.4rem;
                         font-weight: bold;
 
                     }
@@ -103,7 +206,10 @@
 
             .right {
                 display: flex;
+                justify-content: flex-end;
                 align-items: center;
+                width: 50px;
+
 
                 .stat {
                     font-size: 1.3rem;
@@ -115,5 +221,6 @@
         }  
         }
     }
+  }
 }
     } 

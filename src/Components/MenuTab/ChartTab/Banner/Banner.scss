@@ -18,8 +18,64 @@
     padding: 0px 2rem;
     padding-top: 1rem;
 
+    .chart_banner{
+        // background-color: red;
+        border-radius: 0.8rem;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        
+    img {
+        height: 15rem;
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+
+    button {
+        width: 5rem;
+        height: 2rem;
+        color:#FB4CA0;
+        border: 1.5px solid #FB4CA0;
+        border-radius: 1.2rem;
+        margin-top: -0.3rem;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+    .banner_bottom{
+        height: 5rem;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4rem;
+       
+
+        .row_top{
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem;
+
+            .text_top{
+                font-size: 1.4rem;
+                font-weight: bolder;
+            }
+        }
+
+        .row_bottom{
+            display: flex;
+            justify-content: flex-end;
+            padding: 0.5rem;
+            padding-top: 0;
+
+            .text_bottom{
+                font-size: 1.2rem;
+                font-weight:bold;
+                color: rgb(106, 106, 106);
+            }
+
+        }
+    } 
+    }
     
  
+    @media screen and (max-width: 768px)  {
 
     .chart_banner{
         // background-color: red;
@@ -55,7 +111,7 @@
             padding: 0.5rem;
 
             .text_top{
-                font-size: 1.4rem;
+                font-size: 1.15rem;
                 font-weight: bolder;
             }
         }
@@ -66,9 +122,13 @@
             padding: 0.5rem;
             padding-top: 0;
 
+            .text_bottom{
+                font-size: 1.1rem;
+            }
+
         }
+    } 
     }
-    
 }
 }
 }
