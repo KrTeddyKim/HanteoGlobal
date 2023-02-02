@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
-import datetime from '../../../../asset/db/datetime.json'
+import datetime from '../../../../../asset/db/datetime.json'
 
 const PhysicalRecord = () => {
   const [posts, setPosts] = useState([]);
