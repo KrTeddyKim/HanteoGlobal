@@ -1,8 +1,8 @@
-import React from 'react';
-import axios from 'axios';
-import { useCallback, useEffect, useRef, useState } from 'react';
-import { useInView } from 'react-intersection-observer';
-import datetime from '../../../../../asset/db/datetime.json'
+import React from "react";
+import axios from "axios";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { useInView } from "react-intersection-observer";
+import datetime from "../../../../../asset/db/datetime.json";
 
 const Global = () => {
   const [posts, setPosts] = useState([]);
@@ -11,7 +11,7 @@ const Global = () => {
   const [ref, inView] = useInView();
   const resultDatetime = datetime.resultDatetime.value;
 
-
+  // 서버에서 json 데이터 조건부 전송
   const fetch = useCallback(async () => {
     try {
       const { data } = await axios.get(
@@ -27,6 +27,7 @@ const Global = () => {
     }
   }, []);
 
+  // inView 영역 관찰 시 fetch 함수 실행
   useEffect(() => {
     console.log(inView, hasNextPage);
     if (inView && hasNextPage) {
@@ -34,53 +35,56 @@ const Global = () => {
     }
   }, [fetch, hasNextPage, inView]);
 
-    return (
-      <div className='chart_artist'>
-            
-            <div className='chart_item indicator'>
-            <div className='inview' ref={ref} style={{ position: 'fixed', bottom: '70px' }}></div>
-              <div className='left'>
-                <div className='row_container'>
-                  <div className="chart_genre_name">World</div>
-                  <div className="chart_resultDatetime">{resultDatetime}</div>
-                </div>
-              </div>
-              <div className="right">
-                <div className="stat_container">
-                  <div className="stat">World index</div>
-                </div>
-              </div>
-            </div>
-      <div className='chart_item rank_data'>
-        {posts.map((post,idx) => (
+  return (
+    <div className="chart_artist">
+      <div className="chart_item indicator">
+        <div
+          className="inview"
+          ref={ref}
+          style={{ position: "fixed", bottom: "70px" }}
+        ></div>
+        <div className="left">
+          <div className="row_container">
+            <div className="chart_genre_name">World</div>
+            <div className="chart_resultDatetime">{resultDatetime}</div>
+          </div>
+        </div>
+        <div className="right">
+          <div className="stat_container">
+            <div className="stat">World index</div>
+          </div>
+        </div>
+      </div>
+      <div className="chart_item rank_data">
+        {posts.map((post, idx) => (
           <div
-          className='rank_data_container'
+            className="rank_data_container"
             key={idx}
             style={{
-              padding: '5px',
+              padding: "5px",
             }}
           >
-            <div className='left'>
-              <div className='img_container'>
-              <img className='img' src={post.targetImg} alt="no img" />
+            <div className="left">
+              <div className="img_container">
+                <img className="img" src={post.targetImg} alt="no img" />
               </div>
-              <div className='rank_container'>
-                <div className='rank'>{post.rank}</div>
+              <div className="rank_container">
+                <div className="rank">{post.rank}</div>
               </div>
-              <div className='name_container'>
-                <div className='name'>{post.targetName}</div>
+              <div className="name_container">
+                <div className="name">{post.targetName}</div>
               </div>
             </div>
-            <div className='right'>
-              <div className='stat_container'>
-                <div className='stat'>{Math.round(post.value)}</div>
+            <div className="right">
+              <div className="stat_container">
+                <div className="stat">{Math.round(post.value)}</div>
               </div>
             </div>
           </div>
         ))}
-      </div>  
       </div>
-    );
+    </div>
+  );
 };
 
 export default Global;

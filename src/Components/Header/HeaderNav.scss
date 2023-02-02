@@ -1,34 +1,41 @@
+$main-display: flex;
+$main-content: center;
+
+@mixin display($display, $content) {
+    display: $display;
+    justify-content: $content;
+}
+
+
+
+
 .header_navbar {
-    background-color: #FFB1B2;
+    @include display($main-display, $main-content);
     height: 5rem;
-    display: flex;
-    justify-content: center;
-  
+    background-color: #FFB1B2;
 
 
-    .inner{
-        // background-color: yellow;
+
+    .inner {
+        @include display($main-display, $main-content);
         width: 64rem;
-        display: flex;
-        justify-content: center;
         padding: 1rem;
 
-    
+
 
         .nav_item {
-        // background-color: green;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        text-decoration: none;
-        color: black;
-        font-size: 1.5rem;
-        font-weight: 900;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            color: black;
+            font-size: 1.5rem;
+            font-weight: 900;
+            text-decoration: none;
         }
 
-        a:hover{
+        a:hover {
             color: white;
         }
-    } 
+    }
 }

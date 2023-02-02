@@ -1,0 +1,225 @@
+$main-display: flex;
+$main-content: center;
+
+@mixin display($display, $content) {
+    display: $display;
+    justify-content: $content;
+}
+
+
+.main_contents {
+    @include display($main-display, $main-content);
+    align-items: flex-start;
+    height: auto;
+    padding: 2rem;
+
+
+    .contents {
+        width: 56rem;
+        padding: 2rem 2rem;
+        border-radius: 0.8rem;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        .chart_container {
+
+            .indicator {
+                display: flex;
+                justify-content: space-between;
+
+                .chart_genre_name {
+                    padding: 0.5rem 0;
+                    font-size: 2.0rem;
+                    font-weight: bolder;
+                }
+
+                .chart_resultDatetime {
+                    color: rgb(106, 106, 106);
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+
+                .right {
+                    display: flex;
+                    align-items: center;
+                    padding-right: 1rem;
+
+                    .stat {
+                        color: rgb(106, 106, 106);
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .rank_data {
+                bottom: 0;
+                padding-top: 2rem;
+
+                .rank_data_container {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .left {
+                        display: flex;
+                        width: fit-content;
+
+
+                        .img {
+                            display: block;
+                            width: 5rem;
+                            height: 5rem;
+                            border-radius: 0.8rem;
+                            object-fit: cover;
+                        }
+
+
+                        .rank_container {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 40px;
+                            padding: 0rem 1rem;
+
+                            .rank {
+                                color: rgb(65, 65, 65);
+                                font-size: 1.7rem;
+                                font-weight: 700;
+                            }
+                        }
+
+                        .name_container {
+                            display: flex;
+                            align-items: center;
+                            padding-right: 1rem;
+
+                            .name {
+                                font-size: 1.5rem;
+                                font-weight: bold;
+
+                            }
+                        }
+
+                    }
+
+
+                    .right {
+                        @include display($main-display, $main-content);
+                        align-items: center;
+                        width: 50px;
+
+
+                        .stat {
+                            color: rgb(106, 106, 106);
+                            font-size: 1.3rem;
+                            font-weight: 700;
+
+                        }
+                    }
+                }
+            }
+        }
+
+
+        @media screen and (max-width: 768px) {
+
+
+            .chart_container {
+
+                .indicator {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .chart_genre_name {
+                        padding: 0.5rem 0;
+                        font-size: 1.8rem;
+                        font-weight: bolder;
+                    }
+
+                    .chart_resultDatetime {
+                        color: rgb(106, 106, 106);
+                        font-size: 1rem;
+                        font-weight: bold;
+                    }
+
+                    .right {
+                        display: flex;
+                        align-items: center;
+                        padding-right: 1rem;
+
+                        .stat {
+                            color: rgb(106, 106, 106);
+                            font-size: 1rem;
+                            font-weight: 700;
+                        }
+                    }
+                }
+
+                .rank_data {
+                    bottom: 0;
+                    padding-top: 1.5rem;
+
+                    .rank_data_container {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .left {
+                            display: flex;
+                            width: fit-content;
+
+
+                            .img {
+                                display: block;
+                                width: 5rem;
+                                height: 5rem;
+                                border-radius: 0.8rem;
+                                object-fit: cover;
+                            }
+
+
+                            .rank_container {
+                                @include display($main-display, $main-content);
+                                align-items: center;
+                                width: 30px;
+                                padding: 0rem 2rem;
+
+                                .rank {
+                                    color: rgb(65, 65, 65);
+                                    font-size: 1.7rem;
+                                    font-weight: 700;
+                                }
+                            }
+
+                            .name_container {
+                                display: flex;
+                                align-items: center;
+
+                                .name {
+                                    font-size: 1.4rem;
+                                    font-weight: bold;
+
+                                }
+                            }
+
+                        }
+
+
+                        .right {
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                            width: 50px;
+
+
+                            .stat {
+                                color: rgb(106, 106, 106);
+                                font-size: 1.3rem;
+                                font-weight: 700;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
