@@ -9,6 +9,7 @@ import NewsApp from './Components/MenuTab/NewsTab/NewsApp';
 import StoreApp from './Components/MenuTab/StoreTab/StoreApp';
 import ChargeApp from './Components/MenuTab/ChargeTab/ChargeApp';
 import Footer from './Components/Footer/Footer';
+import BackToTopButton from './Components/Common/MUI/BackToTopButton';
 
 function App() {
   const router = createBrowserRouter([
@@ -47,6 +48,7 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router} />
+      <BackToTopButton />
       <Footer />
     </div>
   );
