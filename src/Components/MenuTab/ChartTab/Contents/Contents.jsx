@@ -10,6 +10,7 @@ import { FixedSizeList as List } from "react-window";
 import Test2 from './Test2';
 import Artist from './Artist';
 import PhysicalRecord from './PhysicalRecord';
+import Global from './Global';
 
 // SwiperCore.use([ Pagination ])
 // const bullet = ['1번','2번','3번','4번']
@@ -43,7 +44,7 @@ const Contents = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className='chart_container'>
-            <Test2 />
+            <Global />
             </div>
           </SwiperSlide>
 
