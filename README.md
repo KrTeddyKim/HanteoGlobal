@@ -40,7 +40,11 @@
 
 <img src="https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white"/>
 
-# :package: 프로젝트 구조
+# :card_index_dividers: 프로젝트 구조
+
+<img src="https://github.com/KrTeddyKim/HanteoGlobal/blob/main/public/ProjectStructure.png" width=800 />
+
+# :package: 컴포넌트 구조
 
 ```
 📦Heateo
@@ -85,7 +89,3 @@ src
  ┣ index.css
  ┗ index.js
 ```
-
-# :card_index_dividers: 프로젝트 구조
-
-<img src="https://github.com/KrTeddyKim/HanteoGlobal/blob/main/public/ProjectStructure.png" width=800 />
