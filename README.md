@@ -8,13 +8,17 @@
 
 - 프로젝트 주요 기능 :
 
-1.  상단 탭 메뉴 : 메뉴 별 클릭 이동 // react router dom
+  1.  상단 탭 메뉴 : 메뉴 별 클릭 이동 // react router dom
 
-2.  중단 배너 : 무한 슬라이드, 외부 링크 이동 // swiper-slide, Link
+  2.  중단 배너 : 무한 슬라이드, 외부 링크 이동 // swiper-slide, Link
 
-3.  메인 콘텐츠 : 리스트형 뷰, 무한 스크롤, 좌우 슬라이드 // swiper-slide, useInview, axios, JSON
+  3.  메인 콘텐츠 : 리스트형 뷰, 무한 스크롤, 좌우 슬라이드 // swiper-slide, useInview, axios, JSON
 
-4.  기타 : 백투탑 버튼, 알럿 팝업 // material-ui, Swal
+  4.  기타 : 백투탑 버튼, 알럿 팝업 // material-ui, Swal
+
+* 특이 사항:
+
+  실행 명령어: $ npm run dev (메인 서버와 JSON 서버 동시 호출)
 
 # :hammer_and_wrench: 기술 스택
 
@@ -28,7 +32,7 @@
 
 **Styles**
 
-<img src="https://img.shields.io/badge/Sass-CC6699?style=flat&logo=Sass&logoColor=white"/> <img src="https://img.shields.io/badge/MUI-007FFF?style=flat&logo=MUI&logoColor=white"/> \>
+<img src="https://img.shields.io/badge/Sass-CC6699?style=flat&logo=Sass&logoColor=white"/> <img src="https://img.shields.io/badge/MUI-007FFF?style=flat&logo=MUI&logoColor=white"/>
 
 **Tools**
 
@@ -36,111 +40,56 @@
 
 **Database**
 
-<img src="https://img.shields.io/badge/jQuery-0769AD?style=flat-square&logo=jQuery&logoColor=white"/>
+<img src="https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white"/>
 
 # :package: 프로젝트 구조
 
 ```
-📦Digitalzone
+📦Heateo
 src
  ┣ Components
- ┃ ┣ Block
- ┃ ┃ ┣ BlockChart
- ┃ ┃ ┣ BlockInfo
- ┃ ┃ ┣ Block.jsx
- ┃ ┃ ┣ Block.scss
- ┃ ┃ ┗ BlockTable.jsx
- ┃ ┣ CommonComponents
- ┃ ┃ ┣ Modal
- ┃ ┃ ┗ Page
- ┃ ┣ Context
- ┃ ┃ ┗ ThemeContext.js
- ┃ ┣ Dashboard
- ┃ ┃ ┣ DashboardInfo
- ┃ ┃ ┣ Dashboard.jsx
- ┃ ┃ ┗ Dashboard.scss
+ ┃ ┣ Common/MUI
+ ┃ ┃ ┣ BackToTopButton.jsx
+ ┃ ┃ ┗ BackToTopButton.scss
+ ┃ ┣ Header
+ ┃ ┃ ┣ HeaderNav.jsx
+ ┃ ┃ ┗ HeaderNav.scss
+ ┃ ┣ MenuTab
+ ┃ ┃ ┣ ChartTab
+ ┃ ┃ ┃ ┣ Banner
+ ┃ ┃ ┃ ┃ ┣ Banner.jsx
+ ┃ ┃ ┃ ┃ ┗ Banner.scss
+ ┃ ┃ ┃ ┣ Contents
+ ┃ ┃ ┃ ┃ ┣Contents
+ ┃ ┃ ┃ ┃ ┃ ┣ Artist.jsx
+ ┃ ┃ ┃ ┃ ┃ ┣ Global.jsx
+ ┃ ┃ ┃ ┃ ┃ ┗ PhysicalRecord.jsx
+ ┃ ┃ ┃ ┃ ┃ ContentsApp.jsx
+ ┃ ┃ ┃ ┃ ┗ ContentsApp.scss
+ ┃ ┃ ┣ Event
+ ┃ ┃ ┃ ┗ EvetApp.jsx
+ ┃ ┃ ┣ NewsTab
+ ┃ ┃ ┃ ┗ NewsApp.jsx
+ ┃ ┃ ┣ StoreTab
+ ┃ ┃ ┃ ┗ StoreApp.jsx
+ ┃ ┃ ┣ WhookTab
+ ┃ ┃ ┃ ┗ WhookApp.jsx
  ┃ ┣ Footer
  ┃ ┃ ┣ Footer.jsx
  ┃ ┃ ┗ Footer.scss
- ┃ ┣ Header
- ┃ ┃ ┣ Header_rightWrap
- ┃ ┃ ┣ Header.jsx
- ┃ ┃ ┗ Header.scss
- ┃ ┣ MenuTab
- ┃ ┃ ┣ MenuTab.jsx
- ┃ ┃ ┗ MenuTab.scss
- ┃ ┣ Node
- ┃ ┃ ┣ Chart.jsx
- ┃ ┃ ┣ Chart.scss
- ┃ ┃ ┣ Node.jsx
- ┃ ┃ ┣ Node.scss
- ┃ ┃ ┣ NodeDetail.jsx
- ┃ ┃ ┣ NodeDetail.scss
- ┃ ┃ ┣ Refresh.jsx
- ┃ ┃ ┣ Refresh.scss
- ┃ ┃ ┣ Tab.jsx
- ┃ ┃ ┗ Tab.scss
- ┃ ┣ NotFound
- ┃ ┃ ┣ NotFound.jsx
- ┃ ┃ ┗ NotFound.scss
- ┃ ┣ Service
- ┃ ┃ ┣ ServiceChart
- ┃ ┃ ┣ ServiceInfo
- ┃ ┃ ┣ Service.jsx
- ┃ ┃ ┣ Service.scss
- ┃ ┃ ┗ ServiceTable.jsx
- ┃ ┣ Transaction
- ┃ ┃ ┣ TranInfo
- ┃ ┃ ┣ TranMain
- ┃ ┃ ┣ Transaction.jsx
- ┃ ┃ ┗ Transaction.scss
- ┃ ┣ User
- ┃ ┃ ┣ FixedComponents
- ┃ ┃ ┃ ┣ UserAdd
- ┃ ┃ ┃ ┣ UserList
- ┃ ┃ ┃ ┣ UserLogin
- ┃ ┃ ┃ ┣ UserMyPage
- ┃ ┃ ┃ ┗ UserUpdate
- ┃ ┃ ┣ UserPageComponents
- ┃ ┃ ┃ ┣ UserAdd
- ┃ ┃ ┃ ┣ UserList
- ┃ ┃ ┃ ┣ UserLogin
- ┃ ┃ ┃ ┣ UserMyPage
- ┃ ┃ ┃ ┗ UserUpdate
- ┃ ┃ ┣ User.jsx
- ┃ ┃ ┗ User.scss
  ┃ ┗ Root.jsx
- ┣ Recoil
- ┃ ┣ Atom.jsx
- ┃ ┗ Selector.jsx
- ┣ style
- ┃ ┣ Globalstyle.js
- ┃ ┗ theme.js
+ ┣ asset
+ ┃ ┣ db
+ ┃ ┗ imgs
+ ┣ db.json
  ┣ App.jsx
  ┣ App.scss
- ┣ firebase.js
  ┣ index.css
  ┗ index.js
 ```
 
 # :card_index_dividers: 데이터 구조
 
-<img src="https://github.com/jeongminhui/Digitalzone/blob/main/public/assets/data_structure_2.png" width=800 />
-
-# :crayon: Flowchart
-
-- 관리자 / 사용자
-  <img src="https://github.com/jeongminhui/Digitalzone/blob/main/public/assets/flowchartuser.png" width=800 />
-
-- 블록 / 트랜잭션 / 노드 / 서비스
-  <img src="https://github.com/jeongminhui/Digitalzone/blob/main/public/assets/flowchartbtns.png" width=800 />
-
-# :pushpin: 역할 분담
-
-<img src="https://github.com/jeongminhui/Digitalzone/blob/main/public/assets/distributing_roles.png" width=800 />
-
-# :date: 개발 일정
-
-<img src="https://github.com/jeongminhui/Digitalzone/blob/main/public/assets/development_process.png" width=800 />
+<img src="https://github.com/KrTeddyKim/HanteoGlobal/blob/main/public/ProjectStructure.png" width=800 />
 
 # :computer: Demo
