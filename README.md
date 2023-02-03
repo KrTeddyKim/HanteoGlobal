@@ -2,24 +2,19 @@
 
 # :wave: 소개 및 개요
 
-- 프로젝트 기간 : 2022.12.19 ~ 2023.01.26
+- 프로젝트 기간 : 2023.01.27 ~ 2023.02.03
 
-- 배포 URL : :link: [민희언즈](https://docuchain-minhuions.netlify.app/)
+- 프로잭트 주제 : 리액트 라이브러리를 활용한 반응형 웹 앱 구현
 
-- Test ID / PW : ksh@minhuions.com / test1234!
+- 프로젝트 주요 기능 :
 
-- Notion : [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/200px-Notion-logo.svg.png?20220918151013" height=15 /> 민희언즈 노션](https://glow-frog-e92.notion.site/a95c9b57958f411f8926a648c7950b6d)
+1.  상단 탭 메뉴 : 메뉴 별 클릭 이동 // react router dom
 
-# :speech_balloon: 팀원 소개
+2.  중단 배너 : 무한 슬라이드, 외부 링크 이동 // swiper-slide, Link
 
-**:sunny: 민희언즈를 소개합니다**
-|:crown: 정민희|김규리|김태원|유승현|
-|:---:|:---:|:---:|:---:|
-|<img src="https://avatars.githubusercontent.com/u/62429295?v=4" height=100/>|<img src="https://avatars.githubusercontent.com/u/117346967?v=4" height=100/>|<img src="https://avatars.githubusercontent.com/u/119502221?v=4" height=100/>|<img src="https://avatars.githubusercontent.com/u/86696942?v=4" height=100/>|
-|[@jeongminhui](https://github.com/jeongminhui)|[@gyulls2](https://github.com/gyulls2)|[@KrTeddyKim](https://github.com/KrTeddyKim)|[@RYU339](https://github.com/RYU339)|
-|윤예지|임유빈|정재은|
-|<img src="https://avatars.githubusercontent.com/u/106970503?v=4" height=100/>|<img src="https://avatars.githubusercontent.com/u/108451986?v=4" height=100/>|<img src="https://avatars.githubusercontent.com/u/116541435?v=4" height=100/>|
-|[@YejiNote](https://github.com/YejiNote)|[@Been0701](https://github.com/Been0701)|[@may-jan](https://github.com/may-jan)|
+3.  메인 콘텐츠 : 리스트형 뷰, 무한 스크롤, 좌우 슬라이드 // swiper-slide, useInview, axios, JSON
+
+4.  기타 : 백투탑 버튼, 알럿 팝업 // material-ui, Swal
 
 # :hammer_and_wrench: 기술 스택
 
@@ -29,23 +24,19 @@
 
 **Libraries**
 
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/> <img src="https://img.shields.io/badge/React%20Router-CA4245?style=flat&logo=React%20Router&logoColor=white"/> <img src="https://img.shields.io/badge/React%20Hook%20Form-EC5990?style=flat&logo=React%20Hook%20Form&logoColor=white"/> <img src="https://img.shields.io/badge/Recoil-3A7BE2?style=flat&logo=Recoil&logoColor=white"/>
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/> <img src="https://img.shields.io/badge/React%20Router-CA4245?style=flat&logo=React%20Router&logoColor=white"/> <img src="https://img.shields.io/badge/React%20Hook%20Form-EC5990?style=flat&logo=React%20Hook%20Form&logoColor=white"/>
 
 **Styles**
 
-<img src="https://img.shields.io/badge/Sass-CC6699?style=flat&logo=Sass&logoColor=white"/> <img src="https://img.shields.io/badge/Styled%20Components-DB7093?style=flat&logo=styled-components&logoColor=white"/> <img src="https://img.shields.io/badge/MUI-007FFF?style=flat&logo=MUI&logoColor=white"/> <img src="https://img.shields.io/badge/Ant%20Design-0170FE?style=flat&logo=Ant%20Design&logoColor=white"/>
-
-**Charts**
-
-<img src="https://img.shields.io/badge/Chart.js-FF6384?style=flat&logo=Chart.js&logoColor=white"/> <img src="https://img.shields.io/badge/Nivo.rocks-FD6B57?style=flat&logo=Nivo.rocks&logoColor=white"/> <img src="https://img.shields.io/badge/Apexcharts.js-1A85EE?style=flat&logo=Apexcharts.js&logoColor=white"/>
+<img src="https://img.shields.io/badge/Sass-CC6699?style=flat&logo=Sass&logoColor=white"/> <img src="https://img.shields.io/badge/MUI-007FFF?style=flat&logo=MUI&logoColor=white"/> \>
 
 **Tools**
 
-<img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=Figma&logoColor=white"/> <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"/> <img src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=flat&logo=Visual%20Studio%20Code&logoColor=white"/> <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white"/> <img src="https://img.shields.io/badge/Google%20Meet-00897B?style=flat&logo=Google%20Meet&logoColor=white"/>
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=Figma&logoColor=white"/> <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"/> <img src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=flat&logo=Visual%20Studio%20Code&logoColor=white"/> <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white"/>
 
 **Database**
 
-<img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=Firebase&logoColor=white"/> <img src="https://img.shields.io/badge/Firebase%20Authentication-FFCA28?style=flat&logo=Firebase%20Authentication&logoColor=white"/>
+<img src="https://img.shields.io/badge/jQuery-0769AD?style=flat-square&logo=jQuery&logoColor=white"/>
 
 # :package: 프로젝트 구조
 
