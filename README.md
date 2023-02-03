@@ -16,8 +16,7 @@
 
 * 특이 사항:
 
-  1. 실행 명령어: $ npm run dev (메인 서버와 JSON 서버 동시 호출)
-  2. 반응형 웹 앱 : 425 x 900 size 와 full size 두가지 모두 맞춤 구현
+  - 실행 명령어: $ npm run dev (메인 서버와 JSON 서버 동시 호출)
 
 # :hammer_and_wrench: 기술 스택
 
@@ -90,7 +89,3 @@ src
 # :card_index_dividers: 프로젝트 구조
 
 <img src="https://github.com/KrTeddyKim/HanteoGlobal/blob/main/public/ProjectStructure.png" width=800 />
-
-# :computer: Demo
-
-<img src="https://user-images.githubusercontent.com/119502221/216502594-1c6c0dec-31bf-423c-859a-a9effb136a6f.gif" width=800 />
